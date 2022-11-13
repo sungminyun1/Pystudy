@@ -36,3 +36,16 @@ print(f(1,4))
 
 ex = [1,2,3,4,5]
 print(list(map(lambda x: x **2 if x %2 ==0 else x, ex)))
+
+def asterisk_test(a,*args):
+    print (args)
+    print(type(args))
+
+
+asterisk_test(1,2,3,3,4,5,5)
+
+def asterisk_test2(a, **args):
+    print(args)
+    print(type(args))
+
+asterisk_test2(1,c=1,b=2)
