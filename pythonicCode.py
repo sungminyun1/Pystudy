@@ -1,3 +1,8 @@
+from collections import deque
+from collections import OrderedDict
+from collections import defaultdict
+from collections import Counter
+
 colors = ['a','b','c','d']
 
 result = ''.join(colors)
@@ -49,3 +54,21 @@ def asterisk_test2(a, **args):
     print(type(args))
 
 asterisk_test2(1,c=1,b=2)
+
+
+deq_list = deque()
+for i in range(10):
+    deq_list.append(i)
+print(deq_list)
+
+d= OrderedDict()
+d['x'] = 1
+d['y'] = 2
+d['a'] = 3
+print(d)
+
+d= defaultdict(object)
+print(d['first'])
+
+c = Counter('gallahad')
+print(c)
