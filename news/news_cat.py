@@ -27,3 +27,5 @@ if __name__ == '__main__':
     dir_name = 'news_data'
     file_list = get_file_list(dir_name)
     file_list = [os.path.join(dir_name,file_name) for file_name in file_list]
+
+    X_text , y_class = get_contents(file_list)
